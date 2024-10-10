@@ -12,13 +12,13 @@
         $tela = "";
 
         if($hora >=0 and $hora <= 12){
-            $tela = "<h1>Bom Dia!!</h1> <img></img>"
+            $tela = "<h1>Bom Dia!!</h1> <img src ='img/boa tarde.jpg'></img>"
         }
         else if($hora >12 and $hora <18){
-            $tela = ""
+            $tela = "<h1>Bom Dia!!</h1> <img src ='img/boanoite.jpg'></img>"
         }
         else if{
-            $tela = ""
+            $tela = "<h1>Bom Dia!!</h1> <img src ='img/bomdia.jpg'></img>"
         }
         echo($tela)
     ?>
