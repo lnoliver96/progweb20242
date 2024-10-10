@@ -35,6 +35,5 @@
             <?php } ?>
         </table>
     <?php } ?>
-    
 </body>
 </html>
