@@ -7,10 +7,20 @@
 </head>
 <body>
     <?php 
-        echo "<h1>URLs Absolutas</h1>";
-        echo "<a href='https://www.w3schools.com/'> W3c<a>","<br> <a href='https://www.google.com/'> Google<a>";
-        echo "<h1>URLs Relativas</h1>";
-        echo "<a href='texto.html'> HTML<a>","<br><a href='style.css'> HTML<a>";
+        $datetime = new DateTime( "now", new DateTimeZone( "America/Sao_Paulo" ) );
+        $hora = $datetime->format( 'H' );
+        $tela = "";
+
+        if($hora >=0 and $hora <= 12){
+            $tela = "<h1>Bom Dia!!</h1> <img src ='img/boa tarde.jpg'></img>"
+        }
+        else if($hora >12 and $hora <18){
+            $tela = "<h1>Bom Dia!!</h1> <img src ='img/boanoite.jpg'></img>"
+        }
+        else if{
+            $tela = "<h1>Bom Dia!!</h1> <img src ='img/bomdia.jpg'></img>"
+        }
+        echo($tela)
     ?>
 </body>
 </html>
